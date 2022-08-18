@@ -1,0 +1,79 @@
+ 1. Faça um algoritmo que leia um número inteiro e escreva seu sucessor e
+seu antecessor.
+
+numero = int(input("Introduza aqui qualquer número"))
+suc = numero + 1
+ant = numero - 1
+print("O antecessor a esse número é", ant, "o sucessor desse número é",suc)
+
+2. Escreva um algoritmo que leia o ano de nascimento de uma pessoa,
+calcule e mostre a idade que completará em 2032.
+
+anoNascimento = int(input("Insira aqui seu ano de nascimento"))
+idade = 2032 - anoNascimento
+
+print("Voce completará", idade,"anos em 2032")
+
+3.Construa um algoritmo que leia o valor do salário de um determinado
+funcionário e calcule quantos salários-mínimos este funcionário recebe.
+
+salario = float(input("Insira o valor do seu salário"))
+quantsalario = salario / 1212.00
+
+print("Voce recebe", quantsalario, "salários mínimos")
+
+4.Faça um algoritmo que leia o diâmetro de um círculo e calcule sua área.
+
+salario = float(input("Insira o valor do seu salário"))
+quantsalario = salario / 1212.00
+
+print("Voce recebe {:.2f}".format(quantsalario), "salários mínimos")
+
+5.preco = float(input("Insira aqui o valor do produto"))
+parcelas3 = (preco + (5/100 * preco)) / 3
+parcelas2 = preco / 2
+avista = preco - (5/100 *preco)
+
+print("Caso a compra seja feita a vista, o valor do produto será", avista, "caso sua escolha seja por apenas duas parcelas o valor será", parcelas2,
+      "ou então se a escolha seja por 3 parcelas", parcelas3)
+
+6.Escreva um algoritmo que leia o valor de dois catetos de um triângulo
+retângulo e calcule a hipotenusa.
+
+cateto1 = float(input("Insira o valor de um cateto"))
+cateto2 = float(input("Insira o valor do segunto cateto"))
+
+hipotenusa = ((cateto1 * cateto1) + (cateto2 * cateto2)) ** 0.5
+
+7. Faça um algoritmo que dado um horário fornecido pelo usuário (hora,
+minutos e segundos), calcule o total de minutos e o total de segundos
+que transcorreram desde o início do dia.
+
+hora = int(input("insira a hora atual no sistema de 24h"))
+minutos = int(input("Insira os minutos atuais"))
+segundos = int(input("Insira os segundos atuais"))
+
+totalminutos = (hora * 60) + minutos
+totalsegundos = (totalminutos + 60) + segundos
+print("Desde o inicio do dia temos", totalminutos, "minutos e",totalsegundos, "segudos")
+
+8.Construa um algoritmo que calcule a quantidade de latas de tinta
+necessárias e o custo para pintar tanques cilíndricos de combustível, em
+que são fornecidos a altura e o raio desse cilindro. Sabendo que:
+a. A lata de tinta custa R$ 50,00;
+b. Cada lata contém 5 litros;
+c. Cada litro de tinta pinta 3 metros quadrados;
+d. Entradas: altura e raio;
+e. Saída: custo em R$ e quantidade de latas.
+
+altura = float(input("Insira a altura do cilíndro"))
+raio = float(input("Qual o raio do cilíndro"))
+
+pi = 3.14
+lado = (2 * pi * raio * altura)
+base = pi * (raio ** 2)
+areatotal = (lado + (2 * base))
+totalLitros = float(areatotal / 3)
+lata = float(totalLitros / 5)
+custoLata = lata * 50
+
